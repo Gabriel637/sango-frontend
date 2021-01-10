@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import { bounceIn } from "react-animations";
-import px2vw from "../../utils/px2vw";
 
 const bounceAnimation = keyframes`${bounceIn}`;
 
@@ -21,14 +20,6 @@ export const CardBoxStyled = styled.div`
   border-radius: 1%;
   width: 90vw;
   height: 90vh;
-/*   @media (min-width: 768px) {
-    width: ${px2vw(600, 768)};
-    height: ${px2vw(400, 768)};
-  }
-  @media (min-width: 1024px) {
-    width: ${px2vw(1024)};
-    height: ${px2vw(700)};
-  } */
   z-index: 2;
   background: white;
 `;
