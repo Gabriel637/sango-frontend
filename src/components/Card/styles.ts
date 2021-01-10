@@ -37,6 +37,7 @@ export const Name = styled.div`
   align-items: center;
   flex-direction: column;
   margin: 10px;
+  height: 70px;
   h3{
     font-size: 24px;
     text-align: center;
