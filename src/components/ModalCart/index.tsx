@@ -48,6 +48,10 @@ const ModalCart: React.FC<Props> = ({ visibility, modalHandler }) => {
         modalHandler({ visibility: false, activated: false });
     };
 
+    useEffect(() => {
+        setForm(prevState => { return { ...prevState, products, totalPrice } })
+    }, [products, totalPrice])
+
     const pay = () => {
         api.post('/pay', form, {
             auth: {
